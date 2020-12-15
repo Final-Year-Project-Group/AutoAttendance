@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".Pattern_Recognition"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:text="Time Left"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/time_view"
+            android:textColor="#006400"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" sec"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#000000">
+        <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/pattern_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dotNormalSize="15dp"
+            app:dotSelectedSize="20dp"
+            app:wrongStateColor="#FF0000"
+            app:correctStateColor="#00FF00" />
+    </LinearLayout>
+</LinearLayout>

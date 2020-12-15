@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Session_Availability"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_gen"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Name"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:id="@+id/class_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Code"
+        android:id="@+id/class_code"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Session Code"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:id="@+id/session_code"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Code"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/gen_btn"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_shape"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_shape"
+            android:id="@+id/chk_btn"
+            />
+
+    </LinearLayout>
+</LinearLayout>
